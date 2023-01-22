@@ -3,8 +3,7 @@ import chalk from 'chalk';
 
 function pegaArquivo(caminhoDoArquivo){
 const encoding = 'utf-8';
-fs.readFile(caminhoDoArquivo, encoding, (_, texto)
- => {
+fs.readFile(caminhoDoArquivo, encoding, (_, texto) => {
     console.log(chalk.green(texto));
 })
 }
